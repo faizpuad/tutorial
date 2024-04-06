@@ -1,0 +1,18 @@
+install postgres thru cli, app etc
+
+start the postgres beforehand
+
+two ways I learned to connect to db(postgres):
+ORM(object relational mapping)
+db driver
+
+psycopg2 offer flexibility to write in raw SQL better (for me) than
+using SQLAlchemy
+
+I notice some error like unable to query is due to prior connection close/unclose
+
+details of connection as in notebook
+
+P/S: sometimes venv kernel  not detected in VSC:
+
+ipython kernel install --user --name=myenv    

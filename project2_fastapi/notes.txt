@@ -1,0 +1,15 @@
+before creating fastapi, several module need to be import including:
+uvicorn
+fastapi
+
+then create new main.py (usually will located under folder app)
+
+create instance of fastapi (detail in notebook)
+
+create path using decorator
+
+make sure to include async to the main app function to ensure
+changes in script seamlessy reflect when hosting
+
+start uvicorn
+uvicorn main:app --reload

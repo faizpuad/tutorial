@@ -1,0 +1,15 @@
+Creating virtual enviromnment using two different vesion of python
+
+note that to create env accd to certain version,
+the version need to be install first
+
+
+to create virtual env use the command:
+
+python -m venv myenv
+
+source myenv/bin/activate
+
+to create requirement file:
+
+pip freeze > requirements.txt
