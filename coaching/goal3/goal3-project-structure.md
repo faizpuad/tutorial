@@ -12,15 +12,20 @@ cdk-github-action
 │       └── deploy.yml
 ├── bin/
 │   └── cdk-github-action.ts
-├── client/
-│   └── test-api-gateway.py
-├── data/
-│   └── TestSample.csv
-├── lambda/
-│   ├── api_gateway_to_kinesis.py
-│   └── kinesis_to_s3.py
 ├── lib/
 │   ├── aws-handson-stack.ts
+│   ├── data/
+│   │   └── TestSample.csv
+│   ├── client/
+│   │   └── test-api-gateway.py
+│   ├── lambda/
+│   │   ├── api_gateway_to_kinesis.py
+│   │   └── kinesis_to_s3.py
+│   ├── policies/
+│   │   ├── read-from-kinesis.json
+│   │   ├── read-write-s3-policy.json
+│   │   ├── write-read-s3.json
+│   │   └── write-to-kinesis.json
 │   └── constructs/
 │       ├── api-gateway.ts
 │       ├── kinesis-stream.ts
@@ -28,13 +33,7 @@ cdk-github-action
 │       ├── roles.ts
 │       └── s3-bucket.ts
 ├── node_modules/
-├── policies/
-│   ├── read-from-kinesis.json
-│   ├── read-write-s3-policy.json
-│   ├── write-read-s3.json
-│   └── write-to-kinesis.json
 ├── test/
-├── venv/
 ├── .gitignore
 ├── .npmignore
 ├── cdk.json
